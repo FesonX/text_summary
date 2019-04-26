@@ -16,7 +16,7 @@ def calc_summary():
 	text_summary = TextSummary()
 	text_summary.set_text(title, text)
 	summary = text_summary.calc_summary()
-	print(summary)
+	print(''.join(summary))
 	return json.dumps(summary)
 
 
